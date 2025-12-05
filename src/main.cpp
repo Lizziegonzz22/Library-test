@@ -1,7 +1,8 @@
-#include <iostream>
-#include <vector>
-#include "libro.hpp"
+#include <iostream>  // para input y output
+#include <vector>    // para usar vectores nada mas y las listas
+#include "libro.hpp" // aca esta definido lo que es un libro, esta en include/libro.hpp
 
+// funcion para buscar un libro por su titulo
 bool buscarLibro(const std::vector<libro> &lista_de_libros, const std::string &nombre_libro)
 {
     for (const auto &i : lista_de_libros)
@@ -9,7 +10,7 @@ bool buscarLibro(const std::vector<libro> &lista_de_libros, const std::string &n
             return true;
     return false;
 }
-
+// funcion para ver toda la lista de los libros
 void listaCompletaDeLibros(const std::vector<libro> &lista_de_libros)
 {
     if (lista_de_libros.empty())
@@ -30,7 +31,9 @@ void listaCompletaDeLibros(const std::vector<libro> &lista_de_libros)
     std::cout << std::string(25, '-') << '\n';
 }
 
+// el main es lo primero que se ejecuta SIEMPRE
 int main()
 {
+    // lista de libros
     std::vector<libro> libros;
 }
